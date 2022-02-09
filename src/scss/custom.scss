@@ -1,0 +1,135 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+$body-bg: #f7f7f5;
+$secondary: #959595;
+$orange: #e49e06;
+$cyan: #5bdee6;
+$primary: #e4eae6;
+$gray: #787b66;
+
+$body-font-family: 'noto sans', sans-serif;
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&family=Lato:wght@300&family=Monoton&display=swap');
+
+// Then add additional custom code here
+
+.fs-h3{
+  font-size: 1.3rem;
+}
+
+.f-arial{
+  font-size: 0.7rem;
+}
+
+.body-h{
+  min-height: 62.8rem;
+}
+
+
+.w-index{
+  width: 90%;
+  overflow-x: hidden;
+}
+
+.w-footer{
+  width: 58.75rem; ;
+}
+
+.w-p{
+  width: 26.8rem;
+}
+
+.bg-header{
+  background-color: $primary;
+}
+
+.bg-nav{
+  background: linear-gradient(to right, #1bb5ac, #b2ddb0, #e4eae6);
+}
+
+p{
+  color: $secondary;
+  letter-spacing: 0.05em;
+  line-height: 1.5rem;
+  a{
+    color: $secondary;
+  }
+}
+
+span{
+  color: $secondary;
+  line-height: 1.5rem;
+  a {
+    color: $secondary;
+  }
+}
+
+h3{
+  color: $orange;
+  font-family: anticregular;
+  letter-spacing: .1em;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.bg-footer{
+  background: linear-gradient(to bottom, #2ac3c3, #1e819d);
+}
+
+.h-footer{
+  height: 8.1rem;
+}
+
+.p-color-footer{
+  color: $cyan;
+}
+
+.a-color-header{
+  color: $gray;
+}
+
+.rounded-4{
+  border-radius: 0.8rem;
+}
+
+.ms-footer{
+  margin-left: 1.25rem;
+}
+
+.no-dec{
+  text-decoration: none;
+}
+
+.text-justify{
+  text-align: justify;
+}
+@include media-breakpoint-up(lg) {
+  .a-h{
+    height: 8.1rem;
+    letter-spacing: .075em;
+    line-height: 9.375rem;
+    text-align: center;
+    width: 6.875rem;
+  }
+
+  .w-index{
+    width: 56.375rem;
+  }
+
+  .bg-nav{
+    background: linear-gradient(to bottom, #1bb5ac, #b2ddb0, #e4eae6);
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .w-index{
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .w-p{
+    width: 90%;
+  }
+}

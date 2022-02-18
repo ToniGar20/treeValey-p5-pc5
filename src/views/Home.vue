@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <title>Home</title>
 </head>
+<body>
+  <Header/>
 <div id="body" class="m-0 m-auto py-5 w-index body-h justify-content-center --bs-body-bg">
 		<div class="blog container d-flex flex-lg-row flex-column align-items-md-center overflow-hidden p-1">
 			<div class="w-p">
@@ -53,16 +55,18 @@
 			</div>
 		</div>
 	</div>
+</body>
   </html>
 </template>
 
 <script>
 // @ is an alias to /src
-
+import Header from '@/components/Header.vue'
 
 export default {
   name: 'Home',
   components: {
+    Header
   }
 }
 </script>

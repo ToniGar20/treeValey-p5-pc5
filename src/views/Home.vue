@@ -23,7 +23,7 @@
 				</p>
 			</div>
 		</div>
-
+    <!-- Inserting image carousel of home -->
     <HomeCarousel/>
 
 		<div class="news container d-flex flex-lg-row flex-column align-items-md-center overflow-hidden pt-5 mt-4">

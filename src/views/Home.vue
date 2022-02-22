@@ -80,30 +80,35 @@ export default {
   },
   methods: {
     prevImg() {
+      var items = document.getElementsByClassName("carousel-item");
       if (this.slideIndex !== 0) {
-        let items = document.getElementsByClassName("carousel-item");
         let currentItem = items[this.slideIndex];
         currentItem.classList.remove("active");
         this.slideIndex--;
 
         let previousItemShown = items[this.slideIndex];
         previousItemShown.classList.add("active");
+      } else if (this.slideIndex === 0) {
+        this.slideIndex = 2;
+        items[0].classList.remove("active");
+        items[2].classList.add("active");
       }
     },
     nextImg() {
+      var items = document.getElementsByClassName("carousel-item");
       if (this.slideIndex !== 2) {
         {
-          console.log(this.slideIndex);
-          let items = document.getElementsByClassName("carousel-item");
-          console.log(items);
           let currentItem = items[this.slideIndex];
-          console.log(currentItem);
           currentItem.classList.remove("active");
           this.slideIndex++;
 
           let nextItemShown = items[this.slideIndex];
           nextItemShown.classList.add("active");
         }
+      } else if (this.slideIndex === 2) {
+          this.slideIndex = 0;
+          items[2].classList.remove("active");
+          items[0].classList.add("active");
       }
     },
   }

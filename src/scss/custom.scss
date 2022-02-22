@@ -141,3 +141,10 @@ h3{
     width: 90%;
   }
 }
+
+//Carousel fixed size
+
+.carousel-inner > .carousel-item > img {
+  width: 880px !important;
+  height: 600px;
+}

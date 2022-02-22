@@ -2,13 +2,13 @@
   <div id="carouselExampleIndicators" class="container carousel slide pt-5 mt-4" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="carrousel d-block mw-100 rounded-4" id="slide1" src="@/assets/deco/deco1.jpg" alt="First slide">
+        <img class="carrousel d-block mw-100 rounded-4" id="slide1" src="@/assets/resources/deco1.jpg" alt="First slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block mw-100 rounded-4" id="slide2" src="@/assets/deco/deco2.jpg" alt="Second slide">
+        <img class="d-block mw-100 rounded-4" id="slide2" src="@/assets/resources/deco2.jpg" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block mw-100 rounded-4" id="slide3" src="@/assets/deco/deco3.jpg" alt="Third slide">
+        <img class="d-block mw-100 rounded-4" id="slide3" src="@/assets/resources/deco3.jpg" alt="Third slide">
       </div>
     </div>
     <a class="carousel-control-prev" v-on:click="prevImg()" role="button" data-slide="prev">

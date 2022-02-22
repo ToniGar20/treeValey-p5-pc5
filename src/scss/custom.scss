@@ -17,6 +17,14 @@ $body-font-family: 'noto sans', sans-serif;
 
 // Then add additional custom code here
 
+.carousel-control-next, .carousel-control-prev {
+  top: 3rem;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: black;
+}
+
 .fs-h3{
   font-size: 1.3rem;
 }

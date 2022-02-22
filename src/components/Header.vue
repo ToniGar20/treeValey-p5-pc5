@@ -1,4 +1,5 @@
 <template>
+
    <nav class="navbar navbar-expand-lg navbar-light container-fluid bg-header p-0 ">
 		<div class=" pt-0 m-auto pe-3 w-footer d-flex flex-wrap justify-content-between align-self-center">
 			<a id="logo"><img class="float-start p-3" src="@/assets/logo.png" alt="logo"></a>

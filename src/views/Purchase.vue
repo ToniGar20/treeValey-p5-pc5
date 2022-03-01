@@ -14,9 +14,10 @@
   <Header/>
 
   <div class="jumbotron text-center mt-5">
-    <h1 class="display-3">¡Muchas Gracias!</h1>
+    <h1 class="display-3">¡Muchas gracias por tu pedido!</h1>
     <br>
-    <p class="lead"><strong>Por favor, revisa tu email</strong> para tener todos los detalles del pedido</p>
+    <p class="lead"> Pedido número <strong> {{ orderID }}</strong></p>
+    <p><strong>Por favor, revisa tu email</strong> para tener todos los detalles de tu compra.</p>
     <hr>
     <p>
       ¿Necesitas ayuda? <a href="">Contáctanos</a>
@@ -36,7 +37,17 @@
 import Header from "@/components/Header";
 export default {
   name: "Purchase",
-  components: {Header}
+  components: {Header},
+  orderID: 0,
+  methods: {
+    randomOrderNumber () {
+      this.orderID = Math.ceil(Math.random()*1000000);
+      console.log(this.orderID);
+    }
+  },
+  beforeMount() {
+    this.randomOrderNumber();
+  }
 }
 </script>
 

@@ -55,6 +55,7 @@
 			</div>
 		</div>
 	</div>
+	<Footer/>
 </body>
   </html>
 </template>
@@ -62,11 +63,13 @@
 <script>
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
   components: {
-    Header
+    Header,
+	Footer
   }
 }
 </script>

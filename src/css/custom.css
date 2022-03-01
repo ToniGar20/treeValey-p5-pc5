@@ -11221,6 +11221,10 @@ h3, .h3 {
   text-align: justify;
 }
 
+.img-shop {
+  width: 250px;
+}
+
 @media (min-width: 992px) {
   .a-h {
     height: 8.1rem;

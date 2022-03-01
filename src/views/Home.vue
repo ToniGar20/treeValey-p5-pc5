@@ -41,6 +41,7 @@
 			</div>
 		</div>
 	</div>
+	<Footer/>
 </body>
 </html>
 </template>
@@ -49,13 +50,15 @@
 // @ is an alias to start from /src
 import Header from '@/components/Header.vue'
 import HomeCarousel from "@/components/HomeCarousel";
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
   components: {
     Header,
-    HomeCarousel
-  },
+    HomeCarousel,
+	Footer
+  }
 }
 
 </script>

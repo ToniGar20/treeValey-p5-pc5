@@ -114,6 +114,11 @@ h3{
 .text-justify{
   text-align: justify;
 }
+
+.img-shop{
+  width: 250px;
+}
+
 @include media-breakpoint-up(lg) {
   .a-h{
     height: 8.1rem;

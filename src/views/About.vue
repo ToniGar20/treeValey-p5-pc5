@@ -31,15 +31,17 @@
 			Please feel free to remove some or all the text and links of this page and replace it with your own About content.
 		</p>
 	</div>
+	<Footer/>
   </body>
 </html>
 </template>
 
 <script>
 import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 export default {
     name: 'About',
-    components: { Header }
+    components: { Header, Footer }
 }
 </script>
 

@@ -11,19 +11,19 @@
           <li class="navbar-brand a-h m-0 p-0 nav-link">
             <div>
               <i class="fa-solid fa-truck-fast"></i>
-              <p>Envío Gratuito</p>
+              <p class="a-color-header f-arial">Envío Gratuito</p>
             </div>
           </li>
           <li class="navbar-brand a-h m-0 p-0 nav-link ">
             <div>
               <i class="fa-solid fa-arrow-rotate-left"></i>
-              <p>Devolución tras 30 días</p>
+              <p class="a-color-header f-arial">Devolución tras 30 días</p>
             </div>
           </li>
           <li class="navbar-brand a-h m-0 p-0 nav-link ">
             <div>
               <i class="fa-solid fa-shield"></i>
-              <p>Pago Seguro</p>
+              <p class="a-color-header f-arial">Pago Seguro</p>
             </div>
           </li>
         </ul>

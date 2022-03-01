@@ -12,17 +12,13 @@
   <body>
     <HeaderCheckout/>
 
-  <div>
-    <div>
-      <h3>Resumen de tu pedido</h3>
-    </div>
-  </div>
-
+    <div class="container mt-3">
     <div class="row">
       <div class="col-md-8 order-md-1">
         <h4>Dirección de envío</h4>
-        <form class="needs-validation" novalidate="">
+        <form>
           <div class="row">
+
             <div class="col-md-6 mb-3">
               <label for="firstName">Nombre</label>
               <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
@@ -40,13 +36,13 @@
 
           <div class="mb-3">
             <label for="address">Dirección</label>
-            <input type="text" class="form-control" id="address" placeholder="Calle Pepito 27, 5ºC" required="">
+            <input type="text" class="form-control" id="address" required="">
           </div>
 
           <div class="row">
             <div class="col-md-4 mb-3">
-              <label for="state">Provincia</label>
-              <select class="custom-select d-block w-100" id="state" required="">
+              <label for="province">Provincia</label>
+              <select class="custom-select d-block w-100" id="province" required="">
                 <option value="">Seleccionar</option>
                 <option>Barcelona</option>
                 <option>Illes Balears</option>
@@ -66,21 +62,21 @@
           <hr class="mb-4">
           <div class="custom-control custom-checkbox">
             <input type="checkbox" class="custom-control-input" id="save-info">
-            <label class="custom-control-label" for="save-info">Guardar información para próximas compras</label>
+            <label class="custom-control-label mx-2" for="save-info">Guardar información para próximas compras</label>
           </div>
           <hr class="mb-4">
 
           <h4 class="mb-3">Pago</h4>
 
-          <div class="d-block my-3">
-            <div class="custom-control custom-radio">
-              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
-              <label class="custom-control-label" for="credit">Tarjeta de crédito</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
-              <label class="custom-control-label" for="debit">Tarjeta de débito</label>
-            </div>
+          <div class="row my-3">
+              <div class="custom-control custom-radio col-3">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                <label class="custom-control-label" for="credit">Tarjeta de crédito</label>
+              </div>
+              <div class="custom-control custom-radio col-3">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                <label class="custom-control-label" for="debit">Tarjeta de débito</label>
+              </div>
           </div>
           <div class="row">
             <div class="col-md-6 mb-3">
@@ -103,11 +99,11 @@
             </div>
           </div>
           <hr class="mb-4">
-          <button class="btn btn-primary btn-lg btn-block" type="submit">Realizar pedido</button>
+          <button class="btn btn-primary btn-lg btn-block" v-on:click="confirmationPage()">Realizar pedido</button>
         </form>
       </div>
     </div>
-
+    </div>
   </body>
   </html>
 
@@ -118,6 +114,11 @@ import HeaderCheckout from "@/components/HeaderCheckout";
 export default {
   name: 'Checkout',
   components: {HeaderCheckout},
+  methods: {
+      confirmationPage() {
+        window.location = '/purchase';
+      }
+  }
 }
 
 </script>

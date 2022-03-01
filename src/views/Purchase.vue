@@ -30,7 +30,6 @@
   </body>
   </html>
 
-
 </template>
 
 <script>
@@ -42,7 +41,6 @@ export default {
   methods: {
     randomOrderNumber () {
       this.orderID = Math.ceil(Math.random()*1000000);
-      console.log(this.orderID);
     }
   },
   beforeMount() {

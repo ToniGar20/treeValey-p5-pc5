@@ -5,6 +5,7 @@ import Shop from '@/views/Shop.vue'
 import About from '@/views/About.vue'
 import Contact from '@/views/Contact.vue'
 import Checkout from "@/views/Checkout";
+import Purchase from "@/views/Purchase";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/checkout',
     name: 'Checkout',
     component: Checkout,
+  },
+  {
+    path: '/purchase',
+    name: 'Purchase',
+    component: Purchase,
   }
 ]
 

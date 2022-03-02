@@ -13,8 +13,8 @@
     <HeaderCheckout/>
 
     <div class="container mt-3">
-    <div class="row">
-      <div class="col-md-8 order-md-1">
+    <div class="d-flex">
+      <div class="col-8">
         <h4>Dirección de envío</h4>
         <form>
           <div class="row">
@@ -102,6 +102,11 @@
           <button class="btn btn-primary btn-lg btn-block" v-on:click="confirmationPage()">Realizar pedido</button>
         </form>
       </div>
+
+      <div class="col-4 mx-5">
+        <Carrito/>
+      </div>
+
     </div>
     </div>
   </body>
@@ -111,9 +116,11 @@
 
 <script>
 import HeaderCheckout from "@/components/HeaderCheckout";
+import Carrito from "@/components/Carrito";
+
 export default {
   name: 'Checkout',
-  components: {HeaderCheckout},
+  components: {HeaderCheckout, Carrito},
   methods: {
       confirmationPage() {
         window.location = '/purchase';

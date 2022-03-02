@@ -24,6 +24,7 @@
 					<router-link class="a-color-header nav-link f-arial"  to="/contact">Contact</router-link>
 				</li>
 				</ul>
+				
 			</div>
 		</div>	
 	</nav>
@@ -31,8 +32,10 @@
 </template>
 
 <script>
-export default {
 
+
+export default {
+    
 }
 </script>
 

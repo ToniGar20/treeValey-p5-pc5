@@ -17,7 +17,7 @@
     <h1 class="display-3">¡Muchas gracias por tu pedido!</h1>
     <br>
     <p class="lead"> Pedido número <strong> {{ orderID }}</strong></p>
-    <p><strong>Por favor, revisa tu email</strong> para tener todos los detalles de tu compra.</p>
+    <p>Te hemos enviado a tu <strong>email</strong> los detalles de tu compra.</p>
     <hr>
     <p>
       ¿Necesitas ayuda? <a href="">Contáctanos</a>

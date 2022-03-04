@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="@/css/custom.css">
-    <title>Contact</title>
+    <title>Checkout | treeValey</title>
   </head>
   <body>
     <HeaderCheckout/>
@@ -21,11 +21,11 @@
 
             <div class="col-md-6 mb-3">
               <label for="firstName">Nombre</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
             </div>
             <div class="col-md-6 mb-3">
               <label for="lastName">Apellido/s</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
             </div>
           </div>
 
@@ -36,13 +36,13 @@
 
           <div class="mb-3">
             <label for="address">Dirección</label>
-            <input type="text" class="form-control" id="address" required="">
+            <input type="text" class="form-control" id="address" required>
           </div>
 
           <div class="row">
             <div class="col-md-4 mb-3">
               <label for="province">Provincia</label>
-              <select class="custom-select d-block w-100" id="province" required="">
+              <select class="custom-select d-block w-100" id="province" required>
                 <option value="">Seleccionar</option>
                 <option>Barcelona</option>
                 <option>Illes Balears</option>
@@ -56,7 +56,7 @@
             </div>
             <div class="col-md-3 mb-3">
               <label for="zip">Código Postal</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required="">
+              <input type="text" class="form-control" id="zip" placeholder="" required>
             </div>
           </div>
           <hr class="mb-4">
@@ -99,7 +99,8 @@
             </div>
           </div>
           <hr class="mb-4">
-          <button class="btn btn-primary btn-lg btn-block" v-on:click="confirmationPage()">Realizar pedido</button>
+          <router-link to="/purchase"><button class="btn btn-primary btn-lg btn-block">Realizar pedido</button></router-link>
+
         </form>
       </div>
 
@@ -121,11 +122,6 @@ import Carrito from "@/components/Carrito";
 export default {
   name: 'Checkout',
   components: {HeaderCheckout, Carrito},
-  methods: {
-      confirmationPage() {
-        window.location = '/purchase';
-      }
-  }
 }
 
 </script>

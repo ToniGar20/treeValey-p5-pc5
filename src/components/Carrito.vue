@@ -54,10 +54,6 @@ setup(){
     addFromCart: function(producto){          
       producto.cantidad++
             },
-            
-
-    
-          
   }
   },
     computed:{

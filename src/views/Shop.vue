@@ -35,6 +35,8 @@
             
             <Carrito/>
 
+            <router-link to="/checkout"><button class="btn btn-primary btn-lg btn-block">Realizar pedido</button></router-link>
+
           </div>
         </div>
       </div>
@@ -52,7 +54,7 @@ import {useStore} from 'vuex'
 export default {
     name: 'Shop',
     components: { Header, Footer, Carrito },
-    
+
     setup(){
         const store = useStore()
         return {

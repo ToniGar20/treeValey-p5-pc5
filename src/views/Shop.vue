@@ -31,13 +31,14 @@
          
         </div>
         <div class="col-4">
-          <div class="shop">
+          <div class="shop" v-if="showCart">
             
             <Carrito/>
 
             <router-link to="/checkout"><button class="btn btn-primary btn-lg btn-block">Realizar pedido</button></router-link>
 
           </div>
+          <h3 class="text-center h5" v-else>No hay productos en el carrito</h3>
         </div>
       </div>
     </div>
@@ -72,6 +73,16 @@ export default {
             },
     }
             
+        },
+        computed:{
+          showCart(){
+            if(this.carrito.length > 0){
+              return true
+            }else{
+              return false
+            }
+
+          }
         }
     }
 

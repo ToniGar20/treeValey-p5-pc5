@@ -5,8 +5,8 @@
   
   <div class="dropdown">
     <div class="d-flex justify-content-center">
-    <button class="btn btn-secondary justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-      🛒
+    <button class="btn btn-secondary justify-content-end mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <i class="fa-solid fa-cart-shopping"></i>
       <span class="badge badge-pill badge-secondary">{{cant}}</span>
     </button>
     </div>

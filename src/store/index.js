@@ -6,7 +6,7 @@ export default createStore({
     productos: [
       {
         id:1,
-        imagen:'/img/Silla-e.72a7988f.webp',
+        imagen:'/img/Silla-e.webp',
         nombre: 'Silla',
         descripcion: 'Silla de madera para exteriores, comoda y resistente al sol.',
         price: 100,

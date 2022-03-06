@@ -17,14 +17,19 @@ Desarollo de aplicación con Vue, utilizando componentes, vistas, router links, 
 
 ## Rendimiento del proyecto - Lighthouse
 ---
-captura.jpeg
+* 90 Performance
+* 95 Accesibility
+* 92 Best Practices
+* 100 SEO
+
+<p><img src="src/assets/lighthouse/lighthouse-treevaley-p5.PNG" alt="paleta de colores"></p>
 
 ## Guía de usuario
 ---
 ### Principios de usabilidad y accesibilidad aplicados en las secciones _/shop_ y _/checkout_
 
 <h3>UX</h3>
-**_1. Visual_**
+_**1. Visual**_
 * Definida paleta de colores en toda la web.
 * Principios de diseño gráfico aplicados en toda la web.
 

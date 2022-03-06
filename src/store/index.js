@@ -6,36 +6,36 @@ export default createStore({
     productos: [
       {
         id:1,
-        imagen:'/img/Silla-e.72a7988f.webp',
+        imagen:'Silla-e.jpg',
         nombre: 'Silla',
         descripcion: 'Silla de madera para exteriores, comoda y resistente al sol.',
         price: 100,
         cantidad: 1,},
         {
         id:2,
-        imagen:'/img/mesa-m.34d63e93.webp',
+        imagen:'mesa-m.webp',
         nombre: 'Mesa',
         descripcion: 'Mesa de madera rustica para comedor o salon de 200 x 90 x 80 cm.',
         price: 200,
         cantidad: 1,},
         {id: 3,
-        imagen:'/img/sofa.953d4cf5.webp',
+        imagen:'sofa.webp',
         nombre: 'Sofa',
-        descripcion: 'Sofa acolchado',
+        descripcion: 'Sofa acolchado en tela de algodón natural de 300 x 175 cm de ancho.',
         price: 300,
         cantidad: 1
       },{
         id: 4,
-        imagen:'/img/cama-ind.67b60227.webp',
+        imagen:'cama-ind.webp',
         nombre: 'Cama',
-        descripcion: 'Cama de madera',
+        descripcion: 'Cama con estructura de madera 160x80 con cabecero.',
         price: 250,
         cantidad: 1
       },{
         id: 5,
-        imagen:'/img/cama-king.c2c0b786.webp',
+        imagen:'cama-king.webp',
         nombre: 'CamaKing',
-        descripcion: 'Cama King Size',
+        descripcion: 'Cama King con cabecero grande y color gris. Juego de sábanas incluído.',
         price: 550,
         cantidad: 1
       }

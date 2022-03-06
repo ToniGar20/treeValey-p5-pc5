@@ -21,8 +21,8 @@
     <div class="container d-flex justify-content-center mt-4 my-4" v-for="producto in carrito" :key="producto">
       <div class="card" style="width: 500px;">
         <div class="row no-gutters">
-          <div class="col-sm-5">
-            <img class="card-img" :src="producto.imagen" alt="imagen del producto">
+          <div class="col-sm-5 d-flex">
+            <img class="card-img" :src="require('@/assets/' + producto.imagen)" alt="imagen del producto">
           </div>
           <div class="col-sm-7">
             <div class="card-body">

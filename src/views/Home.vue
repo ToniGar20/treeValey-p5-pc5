@@ -13,7 +13,7 @@
   <div id="body" class="m-0 m-auto py-5 w-index body-h justify-content-center --bs-body-bg">
 		<div class="blog container d-flex flex-lg-row flex-column align-items-md-center overflow-hidden p-1">
 			<div class="w-p">
-				<img class="img-fluid" src="../assets/Silla-e.webp" alt="Casa">
+				<img class="img-fluid" src="../assets/house.webp" alt="Casa">
 			</div>
 			<div class="float-end w-p text-lg-end text-justify">
 				<img class="img-fluid" src="../assets/kayamura.webp" alt="Kayamura">

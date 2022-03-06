@@ -23,7 +23,7 @@
                 <h3 class="fs-h3">{{producto.nombre}}</h3>
                 <p class="pb-5">{{producto.descripcion}}</p>
                 <div class="my-3">
-                <button class="btn btn-primary position-absolute bottom-0 mb-3" @click="addToCart(producto)">Añadir</button>
+                <button class="btn btn-blue position-absolute bottom-0 mb-3" @click="addToCart(producto)">Añadir</button>
                 <p class="text-end position-absolute bottom-0 end-0 me-3 mb-4 text-dark">{{producto.price}}€</p>
                 </div>
               </div>
@@ -37,7 +37,7 @@
             
             <Carrito/>
             <div class="d-flex justify-content-center mt-2">
-              <router-link to="/checkout"><button class="btn btn-primary btn-lg btn-block">Realizar pedido</button></router-link>
+              <router-link to="/checkout"><button class="btn btn-blue btn-lg btn-block">Realizar pedido</button></router-link>
             </div>
           </div>
           <h3 class="text-center h5" v-else>No hay productos en el carrito</h3>

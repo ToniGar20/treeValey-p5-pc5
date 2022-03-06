@@ -21,7 +21,7 @@ captura.jpeg
 
 ## Guía de usuario
 ---
-### Principios de usabilidad y accesibilidad aplicados en las secciones /shop y /checkout
+### Principios de usabilidad y accesibilidad aplicados en las secciones _/shop_ y _/checkout_
 
 <h3>UX</h3>
 **_1. Visual_**

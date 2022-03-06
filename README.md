@@ -86,7 +86,7 @@ Se han cambiado algunos colores de Bootstrap por colores propios y se han añadi
 
 ## Color and font Pallete
 - La paleta de colores utilizadas es la siguiente:
-<p><img src="src/image/Color_palet.PNG" alt="paleta de colores"></p>
+<p><img src="src/assets/colorPalet/Color_palet.PNG" alt="paleta de colores"></p>
 
 
 ## Despliegue

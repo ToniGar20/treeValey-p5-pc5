@@ -5,20 +5,20 @@
   
   <div class="dropdown">
     <div class="d-flex justify-content-center">
-    <button class="btn btn-secondary justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-      🛒
+    <button class="btn btn-secondary justify-content-end mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <i class="fa-solid fa-cart-shopping"></i>
       <span class="badge badge-pill badge-secondary">{{cant}}</span>
     </button>
     </div>
     <div class="collapse show" id="collapseExample">
       <div class="card">
-      <h3 class="text-center">Productos</h3>
+      <h3 class="text-center py-2">Productos</h3>
       <div class="list-group list-group-flush" v-for="producto in carrito" :key="producto">
       <li class="list-group-item">
           <div class=" d-flex justify-content-between">
           <span class="badge bg-success align-self-center">{{producto.cantidad}}</span> 
           <div class="align-self-center">{{producto.nombre}} </div>
-          <span class="align-self-center">${{producto.price * producto.cantidad}}</span>
+          <span class="align-self-center">{{producto.price * producto.cantidad}}€</span>
           <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
           <button v-on:click="addFromCart(producto)" class="btn"> + </button>
           <button v-on:click="removeFromCart(producto)" class="btn"> - </button>
@@ -27,7 +27,7 @@
         </div>
       </li>      
         </div>
-        <div class="text-center fw-bold">Total:{{precioTotal}}</div>
+        <div class="text-center fw-bold py-2">Total:{{precioTotal}}€</div>
         </div>
 
     </div>

@@ -6,7 +6,7 @@
 				&#169; 2023 Tree Valley. All Rights Reserved.
 			</p>
 			<div class="connect float-end ">
-				<img class="w-75" src="@/assets/iconos.png" alt="icono">
+				<img class="w-75" src="@/assets/iconos.webp" alt="icono">
 			</div>
 		</div>
 		</div>

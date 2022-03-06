@@ -41,7 +41,7 @@
       ¿Necesitas ayuda? <router-link to="/contact"><a>Contáctanos</a></router-link>
     </p>
     <p class="lead mt-5">
-      <router-link to="/"><button class="btn btn-blue btn-lg btn-block">Volver a la homepage</button></router-link>
+      <router-link to="/"><button class="btn btn-info btn-lg btn-block">Volver a la homepage</button></router-link>
     </p>
   </div>
 

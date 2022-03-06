@@ -99,7 +99,7 @@
             </div>
           </div>
           <hr class="mb-4">
-          <router-link to="/purchase"><button class="btn btn-blue btn-lg btn-block">Realizar pedido</button></router-link>
+          <router-link to="/purchase"><button class="btn btn-info btn-lg btn-block">Realizar pedido</button></router-link>
 
         </form>
       </div>

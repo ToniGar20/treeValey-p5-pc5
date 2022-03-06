@@ -22,7 +22,7 @@
       <div class="card" style="width: 500px;">
         <div class="row no-gutters">
           <div class="col-sm-5">
-            <img class="card-img" src="@/assets/subdivision1.png" alt="">
+            <img class="card-img" :src="producto.imagen" alt="imagen del producto">
           </div>
           <div class="col-sm-7">
             <div class="card-body">
